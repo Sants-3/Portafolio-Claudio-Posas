@@ -19,36 +19,36 @@
 
             <nav id="nav-inicio">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobre-mi">SOBRE MI</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#cv">CURRICULUM</a></li>
-                    <li><a href="#portafolio">PORTAFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionarOpcion()">INICIO</a></li>
+                    <li><a href="#sobre-mi" onclick="seleccionarOpcion()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionarOpcion()">HABILIDADES</a></li>
+                    <li><a href="#cv" onclick="seleccionarOpcion()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionarOpcion()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionarOpcion()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostarYOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
     </section>
 
     <!-- SECCION DE INICIO -->
-
     <section id="inicio" class="section-inicio">
         <div class="contenido-perfil">
             <div class="perfil-img">
-                <img width="258px" height="300px" src="assets/img/perfil.jpg" alt="imagen-perfil">
+                <img width="258px" height="280px" src="assets/img/perfil.jpg" alt="imagen-perfil">
             </div>
             <h1>CLAUDIO POSAS</h1>
             <h2>Ingeniero en Sistemas - Desarrollador Web Junior</h2>
             <div class="socials-red">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="https://m.facebook.com/profile.php/?id=100010031057069"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/claudio-posas/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Sants-3"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </section>
+
     <!-- SECCION DE SOBRE MI -->
     <section id="sobre-mi" class="section-sobre-mi">
         <div class="contenido-sobre-mi">
@@ -384,6 +384,59 @@
             </div>
         </div>
     </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="section-contacto">
+        <div class="contenido-contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila-datos">
+                <div class="col-datos">
+                    <input type="text" placeholder="Ingresa Tú Nombre">
+                    <input type="text" placeholder="Ingresa Numero telefónico">
+                    <input type="text" placeholder="Ingresa Correo Electronico">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="llenar-button"></span>
+                    </button>
+                </div>
+
+                <div class="col-datos">
+                    <img src="assets/img/mapa.png" alt="mapa">
+                    <div class="informacion">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Honduras, Tegucigalpa M.D.C
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contactame: +504 8875-1882
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo: josueposas@yahoo.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="socials-red">
+            <a href="https://www.facebook.com/JPJosuePosas"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/claudio-posas/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Sants-3"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="./assets/js/controlador.js"></script>
 </body>
 
 </html>
