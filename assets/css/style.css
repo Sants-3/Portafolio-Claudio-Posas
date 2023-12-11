@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans&family=Rubik+Bubbles&display=swap');
+
+*{
+    font-family: 'Work Sans';
+    /* font-weight: bold; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+     scroll-behavior: smooth; /*esto sirve para que al darle click en un link del menu scrolee */
+}
+
+
+/* SECCION DE NAVEGACION */
+#nav-bar {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#nav-bar header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+#nav-bar header .name a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: yellow;
+    text-decoration: none;
+}
+
+#nav-bar header ul{
+    display: flex;
+    list-style: none; /*esto quita los estilos por defecto que traen la lista*/
+}
+
+#nav-bar header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#nav-bar header nav ul li a:hover{
+    color: yellow;
+}
+
+.nav-responsive {
+    display: none;
+    background-color: rgb(30, 255, 0);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECCION DE INICIO */
+.section-inicio{
+    background: linear-gradient(to top, rgba(30,35,38,0.8), rgba(30,35,38,1)),
+    url(/assets/img/fondo-abstracto-textura.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.section-inicio .contenido-perfil{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 370px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.section-inicio .contenido-perfil img{
+    margin-top: 40px;
+    border: 10px solid yellowgreen;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.section-inicio .contenido-perfil h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+
+.section-inicio .contenido-perfil h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.section-inicio .contenido-perfil .socials-red a{
+    color: #fff;
+    display: inline-block; /*Alinea los elementos del bloque*/
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.section-inicio .contenido-perfil .socials-red a:hover{
+    background-color: yellowgreen;
+}
+
+/* SECCION DE SOBRE MI */
+.section-sobre-mi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.section-sobre-mi .contenido-sobre-mi{
+    max-width: 1100px;
+    margin: auto;;
+}
+
+.section-sobre-mi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-sobre-mi .contenido-sobre-mi p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.section-sobre-mi .contenido-sobre-mi .presentacion{
+    color: #1CB698;
+    font-weight: 900;
+}
+
+.section-sobre-mi .fila-datos{
+    display: flex;
+}
+
+.section-sobre-mi .fila-datos .col-datos{
+    width: 50%;
+}
+
+.section-sobre-mi .fila-datos .col-datos .h3-datos{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.section-sobre-mi .fila-datos .col-datos ul{
+    list-style: none;
+}
+
+.section-sobre-mi .fila-datos .col-datos ul li{
+    margin: 12px 0;
+}
+
+.section-sobre-mi .fila-datos .col-datos ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 212px;
+}
+
+.section-sobre-mi .fila-datos .col-datos ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.section-sobre-mi .fila-datos .col-intereses .contenido-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-sobre-mi .fila-datos .col-intereses .h3-intereses{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.section-sobre-mi .fila-datos .col-intereses .contenido-intereses .interes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    transition: 0.3s;
+}
+
+.section-sobre-mi .fila-datos .col-intereses .contenido-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-sobre-mi .fila-datos .col-intereses .contenido-intereses .interes:hover{
+    background-color: #1CB698;
+}
+
+.section-sobre-mi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.section-sobre-mi button .llenar-button{
+    position: absolute;
+    background-color: #1CB698;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+}
+
+.section-sobre-mi button:hover .llenar-button{
+    width: 100%;
+}
+
+/* SECCION DE HABILIDADES */
+.section-habilidades{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.section-habilidades .contenido-habilidades{
+    max-width: 1100px;
+    margin: auto;;
+}
+
+.section-habilidades h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-habilidades .fila-datos{
+    display: flex;
+}
+
+.section-habilidades .fila-datos .col-datos{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.section-habilidades .fila-datos .col-datos h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.section-habilidades .habilidad > span{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-habilidades .habilidad .barra-habilidad{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section-habilidades .habilidad .progreso{
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.section-habilidades .habilidad .barra-habilidad span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* Clases se agregan desde el controlador.js */
+.section-habilidades .habilidad .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.section-habilidades .habilidad .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 69%;}
+}
+
+.section-habilidades .habilidad .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.section-habilidades .habilidad .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+
+@keyframes php {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.section-habilidades .habilidad .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+
+.section-habilidades .habilidad .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.section-habilidades .habilidad .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.section-habilidades .habilidad .trabajo-equipo{
+    width: 0%;
+    animation: 2s trabajo-equipo forwards;
+}
+
+@keyframes trabajo-equipo {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.section-habilidades .habilidad .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.section-habilidades .habilidad .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.section-habilidades .habilidad .creacion-proyectos{
+    width: 0%;
+    animation: 2s creacion-proyectos forwards;
+}
+
+@keyframes creacion-proyectos {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.section-habilidades .habilidad .deteccion-errores{
+    width: 0%;
+    animation: 2s deteccion-errores forwards;
+}
+
+@keyframes deteccion-errores {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+/* SECCION CV */
+.section-cv{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.section-cv .contenido-cv{
+    max-width: 1100px;
+    margin: auto;;
+}
+
+.section-cv h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-cv .fila-datos{
+    display: flex;
+}
+
+.section-cv .fila-datos .col-datos{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.section-cv .fila-datos .col-datos h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+
+.section-cv .fila-datos .izquierda{
+    border-right: 2px solid #252A2E;
+}
+
+.section-cv .fila-datos .derecha{
+    border-left: 2px solid #252A2E;
+}
+
+.section-cv .fila-datos .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+
+.section-cv .fila-datos .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section-cv .fila-datos .item .colegio{
+    color: yellow;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.section-cv .fila-datos .item .fecha{
+    display: block;
+    color: yellow;
+    margin-bottom: 10px;
+}
+
+.section-cv .fila-datos .izq{
+    border-right: 2px solid yellow;
+    margin-right: 20px;
+}
+
+.section-cv .fila-datos .der{
+    border-left: 2px solid yellow;
+    margin-left: 20px;
+}
+
+/* SECCION PORTAFOLIO */
+.section-portafolio{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.section-portafolio .contenido-portafolio{
+    max-width: 1100px;
+    margin: auto;;
+}
+
+.section-portafolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-portafolio .galeria-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-portafolio .galeria-proyectos .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.section-portafolio .galeria-proyectos .proyecto img{
+    width: 100%;
+    display: block;
+    height: 340px;
+}
+
+.section-portafolio .galeria-proyectos .proyecto .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,0.8), rgba(28,182,152,0.8));
+    opacity: 0;
+}
+
+.section-portafolio .galeria-proyectos .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.section-portafolio .galeria-proyectos .proyecto .overlay:hover{
+    opacity: 1;
+}
+
+.section-portafolio .galeria-proyectos .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
