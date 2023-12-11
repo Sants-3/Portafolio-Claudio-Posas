@@ -35,7 +35,7 @@ html{
 #nav-bar header .name a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: yellow;
+    color: brown;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ html{
 
 .nav-responsive {
     display: none;
-    background-color: rgb(30, 255, 0);
+    background-color: brown;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -88,7 +88,7 @@ html{
 
 .section-inicio .contenido-perfil img{
     margin-top: 40px;
-    border: 10px solid yellowgreen;
+    border: 10px solid brown;
     display: block;
     width: 80%;
     margin: auto;
@@ -149,7 +149,7 @@ html{
 }
 
 .section-sobre-mi .contenido-sobre-mi .presentacion{
-    color: #1CB698;
+    color: brown;
     font-weight: 900;
 }
 
@@ -177,12 +177,12 @@ html{
 
 .section-sobre-mi .fila-datos .col-datos ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: brown;
     width: 212px;
 }
 
 .section-sobre-mi .fila-datos .col-datos ul li span{
-    background-color: #1CB698;
+    background-color: brown;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -237,7 +237,7 @@ html{
 
 .section-sobre-mi button .llenar-button{
     position: absolute;
-    background-color: #1CB698;
+    background-color: yellow;
     top: 0;
     left: 0;
     width: 0;
@@ -299,7 +299,7 @@ html{
 }
 
 .section-habilidades .habilidad .progreso{
-    background-color: yellow;
+    background-color:brown;
     position: absolute;
     top: 0;
     left: 0;
@@ -310,7 +310,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color:yellowgreen;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -494,7 +494,7 @@ html{
 }
 
 .section-cv .fila-datos .item .colegio{
-    color: yellow;
+    color: brown;
     font-size: 22px;
     font-weight: bold;
     display: block;
@@ -502,17 +502,17 @@ html{
 
 .section-cv .fila-datos .item .fecha{
     display: block;
-    color: yellow;
+    color: brown;
     margin-bottom: 10px;
 }
 
 .section-cv .fila-datos .izq{
-    border-right: 2px solid yellow;
+    border-right: 2px solid brown;
     margin-right: 20px;
 }
 
 .section-cv .fila-datos .der{
-    border-left: 2px solid yellow;
+    border-left: 2px solid brown;
     margin-left: 20px;
 }
 
@@ -552,7 +552,7 @@ html{
 .section-portafolio .galeria-proyectos .proyecto img{
     width: 100%;
     display: block;
-    height: 340px;
+    height: 300px;
 }
 
 .section-portafolio .galeria-proyectos .proyecto .overlay{
@@ -567,7 +567,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,0.8), rgba(28,182,152,0.8));
+    background: linear-gradient(rgba(131, 182, 28, 0.8), rgba(156, 182, 28, 0.8));
     opacity: 0;
 }
 
@@ -582,4 +582,220 @@ html{
 
 .section-portafolio .galeria-proyectos .proyecto .overlay:hover h3{
     margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.section-contacto{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.section-contacto .contenido-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.section-contacto .fila-datos{
+    display: flex;
+}
+
+.section-contacto .col-datos{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.section-contacto .col-datos input, .section-contacto .col-datos textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.section-contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.section-contacto button .llenar-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: yellow;
+    z-index: -1;
+    transition: 1s;
+}
+
+.section-contacto button:hover .llenar-button{
+    width: 100%;
+}
+
+.section-contacto .col-datos img{
+    width: 100%;
+    height: 87%;
+}
+
+.section-contacto .col-datos .informacion{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-contacto .col-datos .informacion ul{
+    list-style: none;
+    width: 300px;
+}
+
+.section-contacto .col-datos .informacion ul li{
+    margin-bottom: 20px;
+}
+
+.section-contacto .col-datos .informacion ul li i{
+    color: brown;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* SECCION FOOTER */
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer .socials-red{
+    margin-bottom: 20px;
+}
+
+footer .socials-red a{
+    color: #fff;
+    display: inline-block; /*Alinea los elementos del bloque*/
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* RESPONSIVIDAD DEL SITIO */
+@media screen and (max-width:900px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.bar-nav-responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.bar-nav-responsive ul{
+        display: block !important;
+    }
+    nav.bar-nav-responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .section-sobre-mi .fila-datos{
+        display: block;
+    }
+    .section-sobre-mi .fila-datos .col-datos{
+        width: fit-content;
+    }
+    .section-sobre-mi .fila-datos .col-intereses{
+        width: fit-content;
+    }
+    
+    .section-habilidades .fila-datos{
+       display: block;
+    }
+    .section-habilidades .fila-datos .col-datos{
+        width: 100%;
+    }
+    .section-habilidades .fila-datos .col-datos .barra-habilidad{
+        width: 100%;
+    }
+
+    .section-cv .fila-datos{
+        display: block;
+    }
+    .section-cv .fila-datos .col-datos{
+        width: 90%;
+    }
+    .section-cv .fila-datos .derecha{
+        margin-left: 20px;
+    }
+    
+    .section-portafolio .galeria-proyectos{
+        display: block;
+        width: 100%;
+    }
+    .section-portafolio .galeria-proyectos .proyecto{
+       max-width: 100%;
+    }
+    .section-portafolio .galeria-proyectos .proyecto img{
+        width: 100%;
+    }
+
+    .section-contacto .fila-datos{
+        display: block;
+    }
+    .section-contacto .fila-datos .col-datos{
+        width: 100%;
+    }
 }
